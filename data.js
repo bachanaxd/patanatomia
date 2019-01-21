@@ -906,9 +906,7 @@ function sr(m){
 };
 sr(n);
 $( "#next" ).click(function() {
-  n++;
-  kitxva(n);
-  sr(n);
+  if(n<data.length){n++;kitxva(n);sr(n);}
 });
 $( "#prev" ).click(function() {
   if(n>1){n--;kitxva(n)};
