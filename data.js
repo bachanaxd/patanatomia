@@ -919,6 +919,27 @@ $("#search").click(function() {
 	kitxva($('.sr').val());
 });
 
+$(document).bind('keypress', function(e){
+  if(e.which == 46){
+    n++;
+    kitxva(n);
+    sr(n);
+  }else if(e.which == 44){
+    if(n>1){n--;kitxva(n)};
+    sr(n);
+  }else if(e.which == 49){
+      $('.a').click();
+  }else if(e.which == 50){
+    $('.b').click();
+}else if(e.which == 51){
+  $('.c').click();
+}else if(e.which == 52){
+  $('.d').click();
+}
+})
+
+
+
 });
 
 });
