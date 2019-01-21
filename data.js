@@ -893,9 +893,9 @@ for (let i=1; i<data[b].length; i++) {
 } 
   $('input:radio[name="radio"]').change(function() {
         if ($(this).val() == cor[parseInt(data[b][0].split(" ",1))]) {
-          $('.'+$(this).val()).css('color','green');
+          $('.'+$(this).val()).css({"background-color": "#bbd4c7", "color": "green"});
         } else {
-          $('.'+$(this).val()).css('color','red');
+          $('.'+$(this).val()).css({"background-color": "#ffccc9", "color": "red"});
         }
     });
 }
